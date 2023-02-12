@@ -28,10 +28,10 @@ const CartProvider = (props) => {
     defaultCartState
   );
   const addItem = (item) => {
-    dispatchCartState({ action: "ADD", item: item });
+    dispatchCartState({ type: "ADD", item: item });
   };
   const removeItem = (id) => {
-    dispatchCartState({ action: "REMOVE", id: id });
+    dispatchCartState({ type: "REMOVE", id: id });
   };
 
   const cartContext = {
